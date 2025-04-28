@@ -142,9 +142,9 @@ $data = [
     'data' => [
         'attributes' => [
             'line_items' => $line_items,
-            'payment_method_types' => ['card', 'gcash', 'grab_pay'],
-            'success_url' => 'http://localhost/CABS/success.php?order_id='.$order_id,
-            'cancel_url' => 'http://localhost/CABS/cancel.php?order_id='.$order_id,
+            'payment_method_types' => ['gcash'],
+            'success_url' => 'http://localhost/cabs-korean/success.php?order_id='.$order_id,
+            'cancel_url' => 'http://localhost/cabs-korean/cancel.php?order_id='.$order_id,
             'description' => 'Order #'.$order_number,
             'statement_descriptor' => 'CABS KOREAN',
             'metadata' => [

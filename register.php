@@ -1,6 +1,13 @@
 <?php
 ob_start();
 session_start();
+// Handle success/error messages
+if (isset($_GET['success'])) {
+    $success_message = $_GET['success'];
+}
+if (isset($_GET['error'])) {
+    $error_message = $_GET['error'];
+}
 include 'db_connect.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -733,7 +740,7 @@ require 'phpmailer/src/SMTP.php';
                 </div>
             <?php endif; ?>
 
-            <form id="register-form" action="register.php" method="POST">
+            <form id="register-form" action="submit_register.php" method="POST">
                 <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
 
                 <div class="form-row">

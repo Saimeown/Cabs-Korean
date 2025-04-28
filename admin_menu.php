@@ -184,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 if (isset($_GET['generate_qr'])) {
-    $menuUrl = urlencode((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/cabs/menu_landing.php");
+    $menuUrl = urlencode((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/cabs-korean/menu_landing.php");
     $qrUrl = "https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=$menuUrl";
     
     header('Content-Type: image/png');

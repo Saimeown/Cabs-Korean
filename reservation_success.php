@@ -321,11 +321,7 @@ try {
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.php" id="navbar__logo">
-                <img src="images/cabs.jpg" alt="CABS KOREAN Logo">CABS
-            </a>
-        </div>
+        
     </nav>
 
     <div class="confirmation-container">

@@ -81,9 +81,9 @@ $data = [
     'data' => [
         'attributes' => [
             'line_items' => $line_items,
-            'payment_method_types' => ['card', 'gcash', 'grab_pay'],
-            'success_url' => 'http://localhost/CABS/reservation_success.php?reservation_id='.$reservation_id,
-            'cancel_url' => 'http://localhost/CABS/reservation_cancel.php?reservation_id='.$reservation_id,
+            'payment_method_types' => ['gcash'],
+            'success_url' => 'http://localhost/cabs-korean/reservation_success.php?reservation_id='.$reservation_id,
+            'cancel_url' => 'http://localhost/cabs-korean/reservation_cancel.php?reservation_id='.$reservation_id,
             'description' => 'Reservation #'.$reservation_id,
             'statement_descriptor' => 'CABS RESERVATION',
             'metadata' => [
