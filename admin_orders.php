@@ -342,6 +342,7 @@ $status_tabs = [
             color: var(--primary);
         }
 
+
         .close-modal {
             background: none;
             border: none;
