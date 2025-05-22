@@ -135,7 +135,7 @@ if ($delivery_fee > 0) {
     ];
 }
 
-$paymongo_secret = 'sk_test_RLTxKX1MFbsCUdPc1YD4s5jp';
+$paymongo_secret = '';
 $auth = base64_encode($paymongo_secret . ':');
 
 $data = [
