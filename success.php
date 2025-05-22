@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 use Paymongo\PaymongoClient;
 
 try {
-    $client = new PaymongoClient('sk_test_RLTxKX1MFbsCUdPc1YD4s5jp');
+    $client = new PaymongoClient('');
     
     $order_id = $_GET['order_id'] ?? $_SESSION['current_order_id'] ?? 0;
 
